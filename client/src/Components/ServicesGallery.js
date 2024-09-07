@@ -1,10 +1,10 @@
 import * as React from 'react';
 import {Grid,Typography} from '@mui/material';
 import ServiceCard from './ServiceCard';
-import SMMImage from '../Images/alexander-shatov-9Zjd7PE_FRM-unsplash.jpg';
-import ConImage from '../Images/austin-distel-wD1LRb9OeEo-unsplash.jpg';
-import StrImage from '../Images/felix-mittermeier-nAjil1z3eLk-unsplash.jpg';
-import TrackImage from '../Images/jakub-zerdzicki-hGMONQ4T7Co-unsplash.jpg';
+import SMMImage from '../Images/smm.jpg';
+import ConImage from '../Images/content.jpg';
+import StrImage from '../Images/strategy.jpg';
+import TrackImage from '../Images/tracking.jpg';
 
 function ServicesGallery() {
     return (

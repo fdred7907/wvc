@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Button,TextField,Dialog,DialogActions,DialogContent,DialogContentText,DialogTitle} from '@mui/material';
+import {Button,TextField,Dialog,DialogActions,DialogContent,DialogContentText,DialogTitle,Typography} from '@mui/material';
 import axios from 'axios';
 
 const apiUrl = 'http://localhost:5000';
@@ -19,7 +19,8 @@ function EmailDialog() {
     return (
         <React.Fragment>
             <Button variant="contained" onClick={handleClickOpen}>
-                Subscribe for updates
+                <Typography color="secondary">Subscribe for updates
+                </Typography>
             </Button>
             <Dialog
                 open={open}
