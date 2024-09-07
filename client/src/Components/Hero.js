@@ -28,7 +28,7 @@ function Hero(){
             <Typography variant="h1"
             sx={{
                 position:'absolute',
-                zIndex:9999,
+                zIndex:1,
                 top:'50%',
                 left:'50%',
                 transform:'translate(-50%,-50%)',
@@ -39,7 +39,7 @@ function Hero(){
             <Typography variant="h3"
             sx={{
                 position:'absolute',
-                zIndex:9999,
+                zIndex:1,
                 top:'60%',
                 left:'50%',
                 transform:'translate(-50%,-60%)',
@@ -51,7 +51,7 @@ function Hero(){
             <Typography variant="h4"
             sx={{
                 position:'absolute',
-                zIndex:9999,
+                zIndex:1,
                 top:'70%',
                 left:'50%',
                 transform:'translate(-50%,-70%)',

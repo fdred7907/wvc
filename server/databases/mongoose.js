@@ -1,17 +1,14 @@
 //mongodb connection
+const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://AdminAnkit:admin2024@127.0.0.1:27017/Blogdb',
+function mongooseConnectDB(uri){
+mongoose.connect(uri,
     {
         useNewUrlParser:true,
         useUnifiedTopology:true
-});
+})
+.then((result)=>console.log("MongoDB connected"))
+.catch((err)=>console.log(err));
+}
 
-const db = mongoose.connection;
-db.on('error',console.error.bind(console,
-    'MongoDB connection error:'
-));
-
-db.once('open',()=>{
-    console.log("Connected to mongodb");
-});
-
+module.exports = mongooseConnectDB;

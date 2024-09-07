@@ -1,12 +1,13 @@
 import * as React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import ServicesGallery from './Components/ServicesGallery';
-import Industry from './Components/Industry';
+
+import Blog from './Components/Blog';
+import Home from './Components/Home';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider,createTheme } from '@mui/material/styles';
 import {teal,lime,deepPurple} from '@mui/material/colors';
+import { Routes, Route }  from 'react-router-dom';
 
 const darkTheme = createTheme({
   palette:{
@@ -28,11 +29,15 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <React.Fragment>
         <CssBaseline/>
+      
 
         <Navbar/>
-        <Hero/>
-        <ServicesGallery/>
-        <Industry/>
+       
+        <Routes>
+          <Route path="/blog" element={<Blog/>}/>
+          <Route path="/" element={<Home/>}/>
+
+        </Routes>
       </React.Fragment>
     </ThemeProvider>
   );
